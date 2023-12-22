@@ -238,4 +238,12 @@ width: 100%;
     align-items: center;
     justify-content: space-between;
 }
+.designs:nth-child(3){
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(44, 201, 107);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
