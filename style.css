@@ -18,6 +18,8 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #fffefa;
+
 }
 #nav1 {
     display: flex;
@@ -140,11 +142,12 @@ width: 100%;
     }
 }
 #page2{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
 }
 #page2 h3{
   font-size: 45px;  
@@ -152,15 +155,12 @@ width: 100%;
   font-weight: 500;
 }
 #page2 .designsbox{
-    background-color: rebeccapurple;
     width: 100%;
-    /* height: 100%; */
     padding: 10px;
 }
 .designs:nth-child(1){
     height: 40vh;
     width: 100%;
-    background-color: rgb(205, 198, 62);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,7 +200,6 @@ width: 100%;
     height: 30px ;
     width: 30px;
     border-radius: 50%;
-    background-color: darkblue;
     overflow: hidden;
 }
 .creatorimg img{
@@ -228,22 +227,189 @@ width: 100%;
     color: rgb(70, 70, 70);
 }
 .designname h6 i:hover{
-    color: red;
+    color: palevioletred;
 }
 .designs:nth-child(2){
     height: 40vh;
     width: 100%;
-    background-color: rgb(44, 201, 107);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.designs:nth-child(3){
+#page2 button{
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.796);
+    margin-top: 50px;
+    border-radius: 50px ;
+    padding: 15px 25px;
+    font-weight: 500;
+    background-color: #fff;
+    font-size: 18px;
+    transition: all ease .5s;
+}
+#page2 button:hover{
+    background-color: black;
+    color: white;
+}
+#page3{
+    height: 95vh;
+    width: 100%;
+    background-color: #FFDA79;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 100px;
+    text-align: center;
+}
+#page3 h1{
+    font-size: 60px;
+    width: 50%;
+    padding: 0px 20px;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+
+}
+#page3 h6{
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    width: 50%;
+    padding: 0px 30px;
+}
+#btns{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+#btns button{
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all ease .5s;
+    margin-top: 2px;
+}
+#btns button:nth-child(1){
+    background-color: black;
+    color: white;
+}
+#btns button:nth-child(2){
+    color: black;
+    background-color: white;
+}
+#btns button:nth-child(1):hover{
+    color: black;
+    background-color: white;
+}
+#btns button:nth-child(2):hover{
+    background-color: black;
+    color: white;
+}
+#page4{
     height: 40vh;
     width: 100%;
-    background-color: rgb(44, 201, 107);
+    background-color: salmon;
+    padding: 40px 0px;
+    overflow: hidden;
+    }
+.designcategories{
+    height: 100%;
+    /* width: calc((230px + 15px) * 8 + 15px); */
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
+    flex-wrap: nowrap;
 }
-
+.designcategory{
+    height: 100%;
+    width: 100%;
+    background-color: seagreen;
+    animation: scroll 5s linear infinite;
+    animation-fill-mode: forwards;
+}
+.designcategory .categoryimg{
+    height: 80%;
+    width: 100%;
+    background-color: skyblue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.categoryimg img{
+    object-fit: cover;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.designcategory h4{
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 400;
+    color: black;
+}
+footer{
+    height: 40vh;
+    width: 100%;
+    padding: 30px 100px;
+}
+#upper-footer{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+#upper-footer img{
+    height: 40px;
+}
+#upper-footer #otherservices{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#upper-footer #otherservices a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+#upper-footer #socialmedia{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+}
+#lower-footer{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+   
+}
+#lower-footer h6{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: .8;
+}
+#terms{
+    display: flex;
+    align-items: end;
+    gap: 15px;
+}
+#resources{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
