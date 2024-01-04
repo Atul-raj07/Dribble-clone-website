@@ -99,38 +99,42 @@ width: 100%;
 }
 #bottom{
     margin-top: 20px;
-    height: 60%;
+    height: 340px;
     width: 100%;
-    /* background-color: aqua; */
-    /* gap: 20px ; */
-    padding: 20px 20px;
+    background-color: aqua;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     margin-bottom: 60px;
 }
+.dabba-container {
+    display: grid;
+    grid-auto-columns: min-content;
+    grid-auto-flow: column;
+}
 .dabba{
     display: inline-block;
     margin-right: 10px;
-    height: 90%;
-    width: 20%;
-    background: blueviolet;
+    height: 100%;
+    width: 280px;
+    background-color: blueviolet;
     overflow: hidden;
+    box-sizing: border-box;
     border-radius: 40px;
-    object-fit: cover;
     animation-name: dabba;
-    animation-duration: 3s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    object-fit: cover;
     }
 .dabba img{
     object-fit: cover;
-}    
-.dabba video{
-    object-fit: cover;
     height: 100%;
     width: 100%;
+}    
+.dabba video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 @keyframes dabba {
@@ -138,7 +142,7 @@ width: 100%;
         transform: translateX(0);
     }
     to{
-        transform: translateX(calc(-100% - 14px));
+        transform: translateX(calc(-280px * 7 ));
     }
 }
 #page2{
