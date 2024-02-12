@@ -101,30 +101,31 @@ width: 100%;
     margin-top: 20px;
     height: 340px;
     width: 100%;
-    background-color: aqua;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     margin-bottom: 60px;
+    display: flex;
 }
 .dabba-container {
-    display: grid;
-    grid-auto-columns: min-content;
-    grid-auto-flow: column;
+    flex-shrink: 0;
+    animation-name: dabba;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* white-space: nowrap; */
+    flex-wrap: nowrap;
+    display: flex;
 }
 .dabba{
-    display: inline-block;
+    flex-shrink: 0;
     margin-right: 10px;
     height: 100%;
     width: 280px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     overflow: hidden;
     box-sizing: border-box;
     border-radius: 40px;
-    animation-name: dabba;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
     }
 .dabba img{
     object-fit: cover;
@@ -142,7 +143,7 @@ width: 100%;
         transform: translateX(0);
     }
     to{
-        transform: translateX(calc(-280px * 7 ));
+        transform: translateX(-100%);
     }
 }
 #page2{
@@ -317,7 +318,7 @@ width: 100%;
 #page4{
     height: 40vh;
     width: 100%;
-    background-color: salmon;
+    /* background-color: salmon; */
     padding: 40px 0px;
     overflow: hidden;
     }
@@ -334,14 +335,14 @@ width: 100%;
 .designcategory{
     height: 100%;
     width: 100%;
-    background-color: seagreen;
+    /* background-color: seagreen; */
     animation: scroll 5s linear infinite;
     animation-fill-mode: forwards;
 }
 .designcategory .categoryimg{
     height: 80%;
     width: 100%;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     border-radius: 20px;
     overflow: hidden;
 }
